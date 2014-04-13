@@ -20,6 +20,14 @@ void die(const char *message)
 // case for a function pointer
 typedef int (*compare_cb)(int a, int b);
 
+void print_numbers(int *numbers, int count) {
+	int i;
+	for(i = 0; i < count; i++) {
+		printf("%d ", numbers[i]);
+	}
+	printf("\n");
+}
+
 /**
  * A classic bubble sort function that uses the
  * compare_cb to do the sorting.
@@ -41,6 +49,29 @@ int *bubble_sort(int *numbers, int count, compare_cb cmp)
 				temp = target[j+1];
 				target[j+1] = target[j];
 				target[j] = temp;
+			}
+		}
+	}
+
+	return target;
+}
+
+int *insertion_sort(int *numbers, int count, compare_cb cmp)
+{
+	int i, k;
+	int temp;
+	int *target = malloc(count * sizeof(int));
+
+	if(!target) die("Memory error.");
+
+	memcpy(target, numbers, count * sizeof(int));
+
+	for(i = 0; i < count; i++) {
+		for(k = i; k > 0; k--) {
+			if(cmp(target[k-1],target[k]) > 0) {
+				temp = target[k];
+				target[k] = target[k-1];
+				target[k-1] = temp;
 			}
 		}
 	}
@@ -73,15 +104,12 @@ int strange_order(int a, int b)
  */
 void test_sorting(int *numbers, int count, compare_cb cmp)
 {
-	int i = 0;
 	int *sorted = bubble_sort(numbers, count, cmp);
+	// int *sorted = insertion_sort(numbers, count, cmp);
 
 	if(!sorted) die("Failed to sort as requested.");
 
-	for(i = 0; i < count; i++) {
-		printf("%d ", sorted[i]);
-	}
-	printf("\n");
+	print_numbers(sorted, count);
 
 	free(sorted);
 }
@@ -104,7 +132,6 @@ int main(int argc, char *argv[])
 	test_sorting(numbers, count, sorted_order);
 	test_sorting(numbers, count, reverse_order);
 	test_sorting(numbers, count, strange_order);
-	test_sorting(numbers, count, NULL);
 
 	free(numbers);
 
