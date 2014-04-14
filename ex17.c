@@ -10,12 +10,14 @@
 struct Address {
 	int id;
 	int set;
-	char name[MAX_DATA];
-	char email[MAX_DATA];
+	char *name;
+	char *email;
 };
 
 struct Database {
-	struct Address rows[MAX_ROWS];
+	int max_data;
+	int max_rows;
+	struct Address *rows;
 };
 
 struct Connection {
@@ -93,16 +95,22 @@ void Database_write(struct Connection *conn)
 	if(rc == -1) die("Cannot flush database.", conn);
 }
 
-void Database_create(struct Connection *conn)
+void Database_create(struct Connection *conn, int max_data, int max_rows)
 {
-	int i = 0;
+	// int i = 0;
 
-	for(i = 0; i < MAX_ROWS; i++) {
+	conn->db->max_data = max_data;
+	conn->db->max_rows = max_rows;
+
+	conn->db->rows = malloc(sizeof(struct Address)*max_rows);
+	/*
+	 for(i = 0; i < max_rows; i++) {
 		// make a prototype to initialize it
 		struct Address addr = {.id = i, .set = 0};
 		// then just assign it
 		conn->db->rows[i] = addr;
 	}
+	*/
 }
 
 void Database_set(struct Connection *conn, int id, const char *name, const char *email)
@@ -110,16 +118,18 @@ void Database_set(struct Connection *conn, int id, const char *name, const char 
 	struct Address *addr = &conn->db->rows[id];
 	if(addr->set) die("Already set, delete it first", conn);
 
-	addr->set = 1;
-	// WARNING: bug, read the "How To Break It" and fix this
-	char *res = strncpy(addr->name, name, MAX_DATA);
-	addr->name[MAX_DATA-1] = '\0';
+	addr->name = malloc(sizeof(conn->db->max_data));
+	char *res = strncpy(addr->name, name, conn->db->max_data);
+	addr->name[conn->db->max_data-1] = '\0';
 	// demonstrate the strncpy bug
 	if(!res) die("Name copy failed", conn);
 
-	res = strncpy(addr->email, email, MAX_DATA);
-	addr->email[MAX_DATA-1] = '\0';
-	if(!res) die("Email copy failed", conn);
+	addr->email = malloc(sizeof(MAX_DATA));
+	res = strncpy(addr->email, email, conn->db->max_data);
+	addr->email[conn->db->max_data-1] = '\0';
+	if(!res) die("email copy failed", conn);
+
+	addr->set = 1;
 }
 
 void Database_get(struct Connection *conn, int id)
@@ -155,7 +165,7 @@ void Database_list(struct Connection *conn)
 	int i = 0;
 	struct Database *db = conn->db;
 
-	for(i = 0; i < MAX_ROWS; i++) {
+	for(i = 0; i < db->max_rows; i++) {
 		struct Address *cur = &db->rows[i];
 
 		if(cur->set) {
@@ -168,6 +178,8 @@ int main(int argc, char *argv[])
 {
 	if(argc < 3) die("USAGE: ex17 <dbfile> <action> [action params]", NULL);
 
+	int max_data = MAX_DATA;
+	int max_rows = MAX_ROWS;
 	char *filename = argv[1];
 	char action = argv[2][0];
 	struct Connection *conn = Database_open(filename, action);
@@ -183,7 +195,9 @@ int main(int argc, char *argv[])
 			break;
 
 		case 'c':
-			Database_create(conn);
+			max_data = argv[3] ? atoi(argv[3]) : MAX_DATA;
+			max_rows = argv[4] ? atoi(argv[4]) : MAX_ROWS;
+			Database_create(conn, max_data, max_rows);
 			Database_write(conn);
 			break;
 
