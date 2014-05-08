@@ -1,5 +1,4 @@
 *.o
 .notes
 *swp
-ex*
 db

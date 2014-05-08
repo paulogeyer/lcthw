@@ -1,0 +1,425 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Address	ex17.c	/^struct Address {$/;"	s	file:
+Address_print	ex17.c	/^void Address_print(struct Address *addr)$/;"	f
+BLACK_EYES	ex24.c	/^	BLACK_EYES, OTHER_EYES$/;"	e	enum:EyeColor	file:
+BLUE_EYES	ex24.c	/^	BLUE_EYES, GREEN_EYES, BROWN_EYES,$/;"	e	enum:EyeColor	file:
+BROWN_EYES	ex24.c	/^	BLUE_EYES, GREEN_EYES, BROWN_EYES,$/;"	e	enum:EyeColor	file:
+BSSSC_BUFF_LEN	devpkg/bstrlib.c	2290;"	d	file:
+BSTRLIB_INCLUDE	devpkg/bstrlib.h	16;"	d
+BSTRLIB_NOVSNP	devpkg/bstrlib.c	2744;"	d	file:
+BSTRLIB_NOVSNP	devpkg/bstrlib.h	29;"	d
+BSTR_BS_BUFF_LENGTH_GET	devpkg/bstrlib.h	35;"	d
+BSTR_ERR	devpkg/bstrlib.h	33;"	d
+BSTR_OK	devpkg/bstrlib.h	34;"	d
+BS_BUFF_SZ	devpkg/bstrlib.c	1772;"	d	file:
+BUILD_DIR	devpkg/commands.h	9;"	d
+CFCLEN	devpkg/bstrlib.c	1278;"	d	file:
+CFCLEN	devpkg/bstrlib.c	1288;"	d	file:
+CFLAGS	Makefile	/^CFLAGS=-Wall -g$/;"	m
+CFLAGS	devpkg/Makefile	/^CFLAGS=-g -Wall -I${PREFIX}\/apr\/include\/apr-1 -I${PREFIX}\/apr\/include\/apr-util-1$/;"	m
+CLEANUP_SH	devpkg/shell.c	/^Shell CLEANUP_SH = {$/;"	v
+COMMAND_BUILD	devpkg/commands.h	/^	COMMAND_INIT, COMMAND_BUILD$/;"	e	enum:CommandType
+COMMAND_FETCH	devpkg/commands.h	/^	COMMAND_NONE, COMMAND_INSTALL, COMMAND_LIST, COMMAND_FETCH,$/;"	e	enum:CommandType
+COMMAND_INIT	devpkg/commands.h	/^	COMMAND_INIT, COMMAND_BUILD$/;"	e	enum:CommandType
+COMMAND_INSTALL	devpkg/commands.h	/^	COMMAND_NONE, COMMAND_INSTALL, COMMAND_LIST, COMMAND_FETCH,$/;"	e	enum:CommandType
+COMMAND_LIST	devpkg/commands.h	/^	COMMAND_NONE, COMMAND_INSTALL, COMMAND_LIST, COMMAND_FETCH,$/;"	e	enum:CommandType
+COMMAND_NONE	devpkg/commands.h	/^	COMMAND_NONE, COMMAND_INSTALL, COMMAND_LIST, COMMAND_FETCH,$/;"	e	enum:CommandType
+CONFIGURE_SH	devpkg/shell.c	/^Shell CONFIGURE_SH = {$/;"	v
+CONFIG_SCRIPT	devpkg/commands.h	14;"	d
+CURL_SH	devpkg/shell.c	/^Shell CURL_SH = {$/;"	v
+CommandType	devpkg/commands.h	/^enum CommandType {$/;"	g
+Command_build	devpkg/commands.c	/^int Command_build(apr_pool_t *p, const char *url, const char *configure_opts, const char *make_opts, const char *install_opts)$/;"	f
+Command_depends	devpkg/commands.c	/^int Command_depends(apr_pool_t *p, const char *path)$/;"	f
+Command_fetch	devpkg/commands.c	/^int Command_fetch(apr_pool_t *p, const char *url, int fetch_only)$/;"	f
+Command_install	devpkg/commands.c	/^int Command_install(apr_pool_t *p, const char *url, const char *configure_opts, const char *make_opts, const char *install_opts)$/;"	f
+Connection	ex17.c	/^struct Connection {$/;"	s	file:
+DB_DIR	devpkg/db.h	5;"	d
+DB_FILE	devpkg/db.h	4;"	d
+DB_close	devpkg/db.c	/^static void DB_close(FILE *db)$/;"	f	file:
+DB_find	devpkg/db.c	/^int DB_find(const char *url)$/;"	f
+DB_init	devpkg/db.c	/^int DB_init()$/;"	f
+DB_list	devpkg/db.c	/^int DB_list()$/;"	f
+DB_load	devpkg/db.c	/^static bstring DB_load()$/;"	f	file:
+DB_open	devpkg/db.c	/^static FILE *DB_open(const char *path, const char *mode)$/;"	f	file:
+DB_update	devpkg/db.c	/^int DB_update(const char *url)$/;"	f
+DEPENDS_PATH	devpkg/commands.h	6;"	d
+DEPEND_PAT	devpkg/commands.h	11;"	d
+Database	ex17.c	/^struct Database {$/;"	s	file:
+Database_close	ex17.c	/^void Database_close(struct Connection *conn)$/;"	f
+Database_create	ex17.c	/^void Database_create(struct Connection *conn, int max_data, int max_rows)$/;"	f
+Database_delete	ex17.c	/^void Database_delete(struct Connection *conn, int id)$/;"	f
+Database_find	ex17.c	/^void Database_find(struct Connection *conn, char *name)$/;"	f
+Database_get	ex17.c	/^void Database_get(struct Connection *conn, int id)$/;"	f
+Database_list	ex17.c	/^void Database_list(struct Connection *conn)$/;"	f
+Database_load	ex17.c	/^void Database_load(struct Connection *conn)$/;"	f
+Database_open	ex17.c	/^struct Connection *Database_open(const char *filename, char mode)$/;"	f
+Database_set	ex17.c	/^void Database_set(struct Connection *conn, int id, const char *name, const char *email)$/;"	f
+Database_write	ex17.c	/^void Database_write(struct Connection *conn)$/;"	f
+Direction	object.h	/^} Direction;$/;"	t	typeref:enum:__anon2
+EAST	object.h	/^	NORTH, SOUTH, EAST, WEST$/;"	e	enum:__anon2
+EYE_COLOR_NAMES	ex24.c	/^const char *EYE_COLOR_NAMES[] = {$/;"	v
+EyeColor	ex24.c	/^typedef enum EyeColor {$/;"	g	file:
+EyeColor	ex24.c	/^} EyeColor;$/;"	t	typeref:enum:EyeColor	file:
+GIT_PAT	devpkg/commands.h	10;"	d
+GIT_SH	devpkg/shell.c	/^Shell GIT_SH = {$/;"	v
+GREEN_EYES	ex24.c	/^	BLUE_EYES, GREEN_EYES, BROWN_EYES,$/;"	e	enum:EyeColor	file:
+INITIAL_STATIC_FIND_INDEX_COUNT	devpkg/bstrlib.c	1552;"	d	file:
+INSTALL_SH	devpkg/shell.c	/^Shell INSTALL_SH = {$/;"	v
+LDFLAGS	devpkg/Makefile	/^LDFLAGS=-L${PREFIX}\/apr\/lib -lapr-1 -pthread -laprutil-1$/;"	m
+LONG_BITS_QTY	devpkg/bstrlib.c	1275;"	d	file:
+LONG_LOG_BITS_QTY	devpkg/bstrlib.c	1274;"	d	file:
+LONG_TYPE	devpkg/bstrlib.c	1276;"	d	file:
+MAKE_SH	devpkg/shell.c	/^Shell MAKE_SH = {$/;"	v
+MAX_COMMAND_ARGS	devpkg/shell.h	4;"	d
+MAX_DATA	ex17.c	7;"	d	file:
+MAX_DATA	ex24.c	5;"	d	file:
+MAX_DATA	ex25.c	8;"	d	file:
+MAX_ROWS	ex17.c	8;"	d	file:
+MY_NAME	ex22_main.c	/^const char *MY_NAME = "Zed A. Shaw";$/;"	v
+Map	ex19.h	/^struct Map {$/;"	s
+Map	ex19.h	/^typedef struct Map Map;$/;"	t	typeref:struct:Map
+MapProto	ex19.c	/^Object MapProto = {$/;"	v
+Map_attack	ex19.c	/^int Map_attack(void *self, int damage)$/;"	f
+Map_init	ex19.c	/^int Map_init(void *self)$/;"	f
+Map_move	ex19.c	/^void *Map_move(void *self, Direction direction)$/;"	f
+Monster	ex19.h	/^struct Monster {$/;"	s
+Monster	ex19.h	/^typedef struct Monster Monster;$/;"	t	typeref:struct:Monster
+MonsterProto	ex19.c	/^Object MonsterProto = {$/;"	v
+Monster_attack	ex19.c	/^int Monster_attack(void *self, int damage)$/;"	f
+Monster_init	ex19.c	/^int Monster_init(void *self)$/;"	f
+NEW	object.h	24;"	d
+NORTH	object.h	/^	NORTH, SOUTH, EAST, WEST$/;"	e	enum:__anon2
+OTHER_EYES	ex24.c	/^	BLACK_EYES, OTHER_EYES$/;"	e	enum:EyeColor	file:
+Object	object.h	/^} Object;$/;"	t	typeref:struct:__anon3
+Object_attack	object.c	/^int Object_attack(void *self, int damage)$/;"	f
+Object_describe	object.c	/^void Object_describe(void *self)$/;"	f
+Object_destroy	object.c	/^void Object_destroy(void *self)$/;"	f
+Object_init	object.c	/^int Object_init(void *self)$/;"	f
+Object_move	object.c	/^void *Object_move(void *self, Direction direction)$/;"	f
+Object_new	object.c	/^void *Object_new(size_t size, Object proto, char *description)$/;"	f
+PREFIX	devpkg/Makefile	/^PREFIX?=\/usr\/local$/;"	m
+Person	ex16-1.c	/^} Person;$/;"	t	typeref:struct:__anon4	file:
+Person	ex16.c	/^} Person;$/;"	t	typeref:struct:__anon1	file:
+Person	ex24.c	/^typedef struct Person {$/;"	s	file:
+Person	ex24.c	/^} Person;$/;"	t	typeref:struct:Person	file:
+Person_create	ex16.c	/^Person Person_create(char *name, int age, int height, int weight)$/;"	f
+Person_print	ex16-1.c	/^static void Person_print(Person who)$/;"	f	file:
+Person_print	ex16.c	/^void Person_print(Person who)$/;"	f
+Room	ex19.h	/^struct Room {$/;"	s
+Room	ex19.h	/^typedef struct Room Room;$/;"	t	typeref:struct:Room
+RoomProto	ex19.c	/^Object RoomProto = {$/;"	v
+Room_attack	ex19.c	/^int Room_attack(void *self, int damage)$/;"	f
+Room_move	ex19.c	/^void *Room_move(void *self, Direction direction)$/;"	f
+SOUTH	object.h	/^	NORTH, SOUTH, EAST, WEST$/;"	e	enum:__anon2
+START_VSNBUFF	devpkg/bstrlib.c	2756;"	d	file:
+START_VSNBUFF	devpkg/bstrlib.c	2772;"	d	file:
+Shell	devpkg/shell.h	/^typedef struct Shell {$/;"	s
+Shell	devpkg/shell.h	/^} Shell;$/;"	t	typeref:struct:Shell
+Shell_exec	devpkg/shell.c	/^int Shell_exec(Shell template, ...)$/;"	f
+Shell_run	devpkg/shell.c	/^int Shell_run(apr_pool_t *p, Shell *cmd)$/;"	f
+TAR_BZ2_PAT	devpkg/commands.h	13;"	d
+TAR_BZ2_SRC	devpkg/commands.h	8;"	d
+TAR_GZ_PAT	devpkg/commands.h	12;"	d
+TAR_GZ_SRC	devpkg/commands.h	7;"	d
+TAR_SH	devpkg/shell.c	/^Shell TAR_SH = {$/;"	v
+THE_AGE	ex22.c	/^static int THE_AGE = 37;$/;"	v	file:
+THE_SIZE	ex22.c	/^int THE_SIZE = 1000;$/;"	v
+WEST	object.h	/^	NORTH, SOUTH, EAST, WEST$/;"	e	enum:__anon2
+_	object.h	25;"	d
+_CRT_SECURE_NO_WARNINGS	devpkg/bstrlib.c	16;"	d	file:
+__dbg_h	dbg.h	2;"	d
+__dbg_h	devpkg/dbg.h	2;"	d
+_commands_h	devpkg/commands.h	2;"	d
+_db_h	devpkg/db.h	2;"	d
+_ex19_h	ex19.h	2;"	d
+_ex22_h	ex22.h	2;"	d
+_object_h	object.h	2;"	d
+_shell_h	devpkg/shell.h	2;"	d
+age	ex16-1.c	/^	int age;$/;"	m	struct:__anon4	file:
+age	ex16.c	/^	int age;$/;"	m	struct:__anon1	file:
+age	ex24.c	/^	int age;$/;"	m	struct:Person	file:
+args	devpkg/shell.h	/^	const char *args[MAX_COMMAND_ARGS];$/;"	m	struct:Shell
+attack	object.h	/^	int (*attack)(void *self, int damage);$/;"	m	struct:__anon3
+attr	devpkg/shell.h	/^	apr_procattr_t *attr;$/;"	m	struct:Shell
+b	devpkg/bstrlib.c	/^	bstring b;$/;"	m	struct:genBstrList	file:
+bBlockCopy	devpkg/bstrlib.c	67;"	d	file:
+bNgetc	devpkg/bstrlib.h	/^typedef int (*bNgetc) (void *parm);$/;"	t
+bNread	devpkg/bstrlib.h	/^typedef size_t (* bNread) (void *buff, size_t elsize, size_t nelem, void *parm);$/;"	t
+bStream	devpkg/bstrlib.c	/^struct bStream {$/;"	s	file:
+bad_guy	ex19.h	/^	Monster *bad_guy;$/;"	m	struct:Room
+balloc	devpkg/bstrlib.c	/^int balloc (bstring b, int olen) {$/;"	f
+ballocmin	devpkg/bstrlib.c	/^int ballocmin (bstring b, int len) {$/;"	f
+bassign	devpkg/bstrlib.c	/^int bassign (bstring a, const_bstring b) {$/;"	f
+bassignblk	devpkg/bstrlib.c	/^int bassignblk (bstring a, const void * s, int len) {$/;"	f
+bassigncstr	devpkg/bstrlib.c	/^int bassigncstr (bstring a, const char * str) {$/;"	f
+bassignformat	devpkg/bstrlib.c	/^int bassignformat (bstring b, const char * fmt, ...) {$/;"	f
+bassigngets	devpkg/bstrlib.c	/^int bassigngets (bstring b, bNgetc getcPtr, void * parm, char terminator) {$/;"	f
+bassignmidstr	devpkg/bstrlib.c	/^int bassignmidstr (bstring a, const_bstring b, int left, int len) {$/;"	f
+bcatblk	devpkg/bstrlib.c	/^int bcatblk (bstring b, const void * s, int len) {$/;"	f
+bcatcstr	devpkg/bstrlib.c	/^int bcatcstr (bstring b, const char * s) {$/;"	f
+bchar	devpkg/bstrlib.h	203;"	d
+bchare	devpkg/bstrlib.h	202;"	d
+bconcat	devpkg/bstrlib.c	/^int bconcat (bstring b0, const_bstring b1) {$/;"	f
+bconchar	devpkg/bstrlib.c	/^int bconchar (bstring b, char c) {$/;"	f
+bcstrfree	devpkg/bstrlib.c	/^int bcstrfree (char * s) {$/;"	f
+bdata	devpkg/bstrlib.h	201;"	d
+bdatae	devpkg/bstrlib.h	200;"	d
+bdataofs	devpkg/bstrlib.h	199;"	d
+bdataofse	devpkg/bstrlib.h	198;"	d
+bdelete	devpkg/bstrlib.c	/^int bdelete (bstring b, int pos, int len) {$/;"	f
+bdestroy	devpkg/bstrlib.c	/^int bdestroy (bstring b) {$/;"	f
+bfindreplace	devpkg/bstrlib.c	/^int bfindreplace (bstring b, const_bstring find, const_bstring repl, int pos) {$/;"	f
+bfindreplacecaseless	devpkg/bstrlib.c	/^int bfindreplacecaseless (bstring b, const_bstring find, const_bstring repl, int pos) {$/;"	f
+bformat	devpkg/bstrlib.c	/^bstring bformat (const char * fmt, ...) {$/;"	f
+bformata	devpkg/bstrlib.c	/^int bformata (bstring b, const char * fmt, ...) {$/;"	f
+bfromcstr	devpkg/bstrlib.c	/^bstring bfromcstr (const char * str) {$/;"	f
+bfromcstralloc	devpkg/bstrlib.c	/^bstring bfromcstralloc (int mlen, const char * str) {$/;"	f
+bgets	devpkg/bstrlib.c	/^bstring bgets (bNgetc getcPtr, void * parm, char terminator) {$/;"	f
+bgetsa	devpkg/bstrlib.c	/^int bgetsa (bstring b, bNgetc getcPtr, void * parm, char terminator) {$/;"	f
+binchr	devpkg/bstrlib.c	/^int binchr (const_bstring b0, int pos, const_bstring b1) {$/;"	f
+binchrCF	devpkg/bstrlib.c	/^static int binchrCF (const unsigned char * data, int len, int pos, const struct charField * cf) {$/;"	f	file:
+binchrr	devpkg/bstrlib.c	/^int binchrr (const_bstring b0, int pos, const_bstring b1) {$/;"	f
+binchrrCF	devpkg/bstrlib.c	/^static int binchrrCF (const unsigned char * data, int pos, const struct charField * cf) {$/;"	f	file:
+binsert	devpkg/bstrlib.c	/^int binsert (bstring b1, int pos, const_bstring b2, unsigned char fill) {$/;"	f
+binsertch	devpkg/bstrlib.c	/^int binsertch (bstring b, int pos, int len, unsigned char fill) {$/;"	f
+binstr	devpkg/bstrlib.c	/^int binstr (const_bstring b1, int pos, const_bstring b2) {$/;"	f
+binstrcaseless	devpkg/bstrlib.c	/^int binstrcaseless (const_bstring b1, int pos, const_bstring b2) {$/;"	f
+binstrr	devpkg/bstrlib.c	/^int binstrr (const_bstring b1, int pos, const_bstring b2) {$/;"	f
+binstrrcaseless	devpkg/bstrlib.c	/^int binstrrcaseless (const_bstring b1, int pos, const_bstring b2) {$/;"	f
+biseq	devpkg/bstrlib.c	/^int biseq (const_bstring b0, const_bstring b1) {$/;"	f
+biseqcaseless	devpkg/bstrlib.c	/^int biseqcaseless (const_bstring b0, const_bstring b1) {$/;"	f
+biseqcstr	devpkg/bstrlib.c	/^int biseqcstr (const_bstring b, const char * s) {$/;"	f
+biseqcstrcaseless	devpkg/bstrlib.c	/^int biseqcstrcaseless (const_bstring b, const char * s) {$/;"	f
+bisstemeqblk	devpkg/bstrlib.c	/^int bisstemeqblk (const_bstring b0, const void * blk, int len) {$/;"	f
+bisstemeqcaselessblk	devpkg/bstrlib.c	/^int bisstemeqcaselessblk (const_bstring b0, const void * blk, int len) {$/;"	f
+biswriteprotected	devpkg/bstrlib.h	298;"	d
+bjoin	devpkg/bstrlib.c	/^bstring bjoin (const struct bstrList * bl, const_bstring sep) {$/;"	f
+bl	devpkg/bstrlib.c	/^	struct bstrList * bl;$/;"	m	struct:genBstrList	typeref:struct:genBstrList::bstrList	file:
+blength	devpkg/bstrlib.h	197;"	d
+blengthe	devpkg/bstrlib.h	196;"	d
+blk2bstr	devpkg/bstrlib.c	/^bstring blk2bstr (const void * blk, int len) {$/;"	f
+blk2tbstr	devpkg/bstrlib.h	225;"	d
+bltrimws	devpkg/bstrlib.c	/^int bltrimws (bstring b) {$/;"	f
+bmid2tbstr	devpkg/bstrlib.h	231;"	d
+bmidstr	devpkg/bstrlib.c	/^bstring bmidstr (const_bstring b, int left, int len) {$/;"	f
+bninchr	devpkg/bstrlib.c	/^int bninchr (const_bstring b0, int pos, const_bstring b1) {$/;"	f
+bninchrr	devpkg/bstrlib.c	/^int bninchrr (const_bstring b0, int pos, const_bstring b1) {$/;"	f
+bpattern	devpkg/bstrlib.c	/^int bpattern (bstring b, int len) {$/;"	f
+bread	devpkg/bstrlib.c	/^bstring bread (bNread readPtr, void * parm) {$/;"	f
+breada	devpkg/bstrlib.c	/^int breada (bstring b, bNread readPtr, void * parm) {$/;"	f
+breplace	devpkg/bstrlib.c	/^int breplace (bstring b1, int pos, int len, const_bstring b2, $/;"	f
+brtrimws	devpkg/bstrlib.c	/^int brtrimws (bstring b) {$/;"	f
+bsStatic	devpkg/bstrlib.h	209;"	d
+bsStatic	devpkg/bstrlib.h	212;"	d
+bsStaticBlkParms	devpkg/bstrlib.h	216;"	d
+bsStaticMlen	devpkg/bstrlib.h	206;"	d
+bsbufflength	devpkg/bstrlib.c	/^int bsbufflength (struct bStream * s, int sz) {$/;"	f
+bscb	devpkg/bstrlib.c	/^static int bscb (void * parm, int ofs, int len) {$/;"	f	file:
+bsclose	devpkg/bstrlib.c	/^void * bsclose (struct bStream * s) {$/;"	f
+bseof	devpkg/bstrlib.c	/^int bseof (const struct bStream * s) {$/;"	f
+bsetstr	devpkg/bstrlib.c	/^int bsetstr (bstring b0, int pos, const_bstring b1, unsigned char fill) {$/;"	f
+bsopen	devpkg/bstrlib.c	/^struct bStream * bsopen (bNread readPtr, void * parm) {$/;"	f
+bspeek	devpkg/bstrlib.c	/^int bspeek (bstring r, const struct bStream * s) {$/;"	f
+bsplit	devpkg/bstrlib.c	/^struct bstrList * bsplit (const_bstring str, unsigned char splitChar) {$/;"	f
+bsplitcb	devpkg/bstrlib.c	/^int bsplitcb (const_bstring str, unsigned char splitChar, int pos,$/;"	f
+bsplits	devpkg/bstrlib.c	/^struct bstrList * bsplits (const_bstring str, const_bstring splitStr) {$/;"	f
+bsplitscb	devpkg/bstrlib.c	/^int bsplitscb (const_bstring str, const_bstring splitStr, int pos,$/;"	f
+bsplitstr	devpkg/bstrlib.c	/^struct bstrList * bsplitstr (const_bstring str, const_bstring splitStr) {$/;"	f
+bsplitstrcb	devpkg/bstrlib.c	/^int bsplitstrcb (const_bstring str, const_bstring splitStr, int pos,$/;"	f
+bsread	devpkg/bstrlib.c	/^int bsread (bstring r, struct bStream * s, int n) {$/;"	f
+bsreada	devpkg/bstrlib.c	/^int bsreada (bstring r, struct bStream * s, int n) {$/;"	f
+bsreadln	devpkg/bstrlib.c	/^int bsreadln (bstring r, struct bStream * s, char terminator) {$/;"	f
+bsreadlna	devpkg/bstrlib.c	/^int bsreadlna (bstring r, struct bStream * s, char terminator) {$/;"	f
+bsreadlns	devpkg/bstrlib.c	/^int bsreadlns (bstring r, struct bStream * s, const_bstring term) {$/;"	f
+bsreadlnsa	devpkg/bstrlib.c	/^int bsreadlnsa (bstring r, struct bStream * s, const_bstring term) {$/;"	f
+bssplitscb	devpkg/bstrlib.c	/^int bssplitscb (struct bStream * s, const_bstring splitStr, $/;"	f
+bssplitstrcb	devpkg/bstrlib.c	/^int bssplitstrcb (struct bStream * s, const_bstring splitStr, $/;"	f
+bstr2cstr	devpkg/bstrlib.c	/^char * bstr2cstr (const_bstring b, char z) {$/;"	f
+bstrList	devpkg/bstrlib.h	/^struct bstrList {$/;"	s
+bstrListAlloc	devpkg/bstrlib.c	/^int bstrListAlloc (struct bstrList * sl, int msz) {$/;"	f
+bstrListAllocMin	devpkg/bstrlib.c	/^int bstrListAllocMin (struct bstrList * sl, int msz) {$/;"	f
+bstrListCreate	devpkg/bstrlib.c	/^struct bstrList * bstrListCreate (void) {$/;"	f
+bstrListDestroy	devpkg/bstrlib.c	/^int bstrListDestroy (struct bstrList * sl) {$/;"	f
+bstr__alloc	devpkg/bstrlib.c	34;"	d	file:
+bstr__free	devpkg/bstrlib.c	38;"	d	file:
+bstr__memchr	devpkg/bstrlib.c	62;"	d	file:
+bstr__memcmp	devpkg/bstrlib.c	58;"	d	file:
+bstr__memcpy	devpkg/bstrlib.c	46;"	d	file:
+bstr__memmove	devpkg/bstrlib.c	50;"	d	file:
+bstr__memset	devpkg/bstrlib.c	54;"	d	file:
+bstr__realloc	devpkg/bstrlib.c	42;"	d	file:
+bstrchr	devpkg/bstrlib.h	92;"	d
+bstrchrp	devpkg/bstrlib.c	/^int bstrchrp (const_bstring b, int c, int pos) {$/;"	f
+bstrcmp	devpkg/bstrlib.c	/^int bstrcmp (const_bstring b0, const_bstring b1) {$/;"	f
+bstrcpy	devpkg/bstrlib.c	/^bstring bstrcpy (const_bstring b) {$/;"	f
+bstricmp	devpkg/bstrlib.c	/^int bstricmp (const_bstring b0, const_bstring b1) {$/;"	f
+bstring	devpkg/bstrlib.h	/^typedef struct tagbstring * bstring;$/;"	t	typeref:struct:tagbstring
+bstrncmp	devpkg/bstrlib.c	/^int bstrncmp (const_bstring b0, const_bstring b1, int n) {$/;"	f
+bstrnicmp	devpkg/bstrlib.c	/^int bstrnicmp (const_bstring b0, const_bstring b1, int n) {$/;"	f
+bstrrchr	devpkg/bstrlib.h	93;"	d
+bstrrchrp	devpkg/bstrlib.c	/^int bstrrchrp (const_bstring b, int c, int pos) {$/;"	f
+bsunread	devpkg/bstrlib.c	/^int bsunread (struct bStream * s, const_bstring b) {$/;"	f
+btfromblk	devpkg/bstrlib.h	230;"	d
+btfromblkltrimws	devpkg/bstrlib.h	255;"	d
+btfromblkrtrimws	devpkg/bstrlib.h	267;"	d
+btfromblktrimws	devpkg/bstrlib.h	279;"	d
+btfromcstr	devpkg/bstrlib.h	220;"	d
+btolower	devpkg/bstrlib.c	/^int btolower (bstring b) {$/;"	f
+btoupper	devpkg/bstrlib.c	/^int btoupper (bstring b) {$/;"	f
+btrimws	devpkg/bstrlib.c	/^int btrimws (bstring b) {$/;"	f
+btrunc	devpkg/bstrlib.c	/^int btrunc (bstring b, int n) {$/;"	f
+bubble_sort	ex18.c	/^int *bubble_sort(int *numbers, int count, compare_cb cmp)$/;"	f
+buff	devpkg/bstrlib.c	/^	bstring buff;		\/* Buffer for over-reads *\/$/;"	m	struct:bStream	file:
+buildCharField	devpkg/bstrlib.c	/^static int buildCharField (struct charField * cf, const_bstring b) {$/;"	f	file:
+bvcformata	devpkg/bstrlib.c	/^int bvcformata (bstring b, int count, const char * fmt, va_list arg) {$/;"	f
+bvformata	devpkg/bstrlib.h	138;"	d
+bwriteallow	devpkg/bstrlib.h	297;"	d
+bwriteprotect	devpkg/bstrlib.h	296;"	d
+can_print_it	ex14.c	/^int can_print_it(char ch)$/;"	f
+charField	devpkg/bstrlib.c	/^struct charField { LONG_TYPE content[CFCLEN]; };$/;"	s	file:
+charField	devpkg/bstrlib.c	/^struct charField { unsigned char content[CFCLEN]; };$/;"	s	file:
+check	dbg.h	19;"	d
+check	devpkg/dbg.h	19;"	d
+check_debug	dbg.h	22;"	d
+check_debug	devpkg/dbg.h	22;"	d
+check_mem	dbg.h	21;"	d
+check_mem	devpkg/dbg.h	21;"	d
+clean_errno	dbg.h	14;"	d
+clean_errno	devpkg/dbg.h	14;"	d
+compare_cb	ex18.c	/^typedef int (*compare_cb)(int a, int b);$/;"	t	file:
+const_bstring	devpkg/bstrlib.h	/^typedef const struct tagbstring * const_bstring;$/;"	t	typeref:struct:tagbstring
+content	devpkg/bstrlib.c	/^struct charField { LONG_TYPE content[CFCLEN]; };$/;"	m	struct:charField	file:
+content	devpkg/bstrlib.c	/^struct charField { unsigned char content[CFCLEN]; };$/;"	m	struct:charField	file:
+cstr2bstr	devpkg/bstrlib.h	41;"	d
+cstr2tbstr	devpkg/bstrlib.h	219;"	d
+data	devpkg/bstrlib.h	/^	unsigned char * data;$/;"	m	struct:tagbstring
+db	ex17.c	/^	struct Database *db;$/;"	m	struct:Connection	typeref:struct:Connection::Database	file:
+debug	dbg.h	11;"	d
+debug	dbg.h	9;"	d
+debug	devpkg/dbg.h	11;"	d
+debug	devpkg/dbg.h	9;"	d
+describe	object.h	/^	void (*describe)(void *self);$/;"	m	struct:__anon3
+description	object.h	/^	char *description;$/;"	m	struct:__anon3
+destroy	object.h	/^	void (*destroy)(void *self);$/;"	m	struct:__anon3
+die	ex17.c	/^void die(const char *message, struct Connection *conn)$/;"	f
+die	ex18.c	/^void die(const char *message)$/;"	f
+dir	devpkg/shell.h	/^	const char *dir;$/;"	m	struct:Shell
+downcase	devpkg/bstrlib.c	560;"	d	file:
+east	ex19.h	/^	struct Room *east;$/;"	m	struct:Room	typeref:struct:Room::Room
+email	ex17.c	/^	char *email;$/;"	m	struct:Address	file:
+entry	devpkg/bstrlib.h	/^    bstring * entry;$/;"	m	struct:bstrList
+exe	devpkg/shell.h	/^	const char *exe;$/;"	m	struct:Shell
+exit_code	devpkg/shell.h	/^	int exit_code;$/;"	m	struct:Shell
+exit_why	devpkg/shell.h	/^	apr_exit_why_e exit_why;$/;"	m	struct:Shell
+exvsnprintf	devpkg/bstrlib.c	2750;"	d	file:
+exvsnprintf	devpkg/bstrlib.c	2755;"	d	file:
+exvsnprintf	devpkg/bstrlib.c	2765;"	d	file:
+eyes	ex24.c	/^	EyeColor eyes;$/;"	m	struct:Person	file:
+file	ex17.c	/^	FILE *file;$/;"	m	struct:Connection	file:
+findreplaceengine	devpkg/bstrlib.c	/^static int findreplaceengine (bstring b, const_bstring find, const_bstring repl, int pos, instr_fnptr instr) {$/;"	f	file:
+first_name	ex24.c	/^	char first_name[MAX_DATA];$/;"	m	struct:Person	file:
+genBstrList	devpkg/bstrlib.c	/^struct genBstrList {$/;"	s	file:
+get_age	ex22.c	/^int get_age()$/;"	f
+height	ex16.c	/^	int height;$/;"	m	struct:__anon1	file:
+hit_points	ex19.h	/^	int hit_points;$/;"	m	struct:Monster
+id	ex17.c	/^	int id;$/;"	m	struct:Address	file:
+income	ex24.c	/^	float income;$/;"	m	struct:Person	file:
+init	object.h	/^	int (*init)(void *self);$/;"	m	struct:__anon3
+insertion_sort	ex18.c	/^int *insertion_sort(int *numbers, int count, compare_cb cmp)$/;"	f
+instr_fnptr	devpkg/bstrlib.c	/^typedef int (*instr_fnptr) (const_bstring s1, int pos, const_bstring s2);$/;"	t	file:
+invertCharField	devpkg/bstrlib.c	/^static void invertCharField (struct charField * cf) {$/;"	f	file:
+isEOF	devpkg/bstrlib.c	/^	int isEOF;		\/* track file's EOF state *\/$/;"	m	struct:bStream	file:
+last_name	ex24.c	/^	char last_name[MAX_DATA];$/;"	m	struct:Person	file:
+location	ex19.h	/^	Room *location;$/;"	m	struct:Map
+log_err	dbg.h	16;"	d
+log_err	devpkg/dbg.h	16;"	d
+log_info	dbg.h	18;"	d
+log_info	devpkg/dbg.h	18;"	d
+log_warn	dbg.h	17;"	d
+log_warn	devpkg/dbg.h	17;"	d
+main	devpkg/devpkg.c	/^int main(int argc, const char const *argv[])$/;"	f
+main	ex1.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex10.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex11.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex14.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex15.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex16-1.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex16.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex17.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex18.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex19.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex20.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex22_main.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex24.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex25.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex3.c	/^int main()$/;"	f
+main	ex4.c	/^int main()$/;"	f
+main	ex5.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex6.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex7.c	/^int main(int argv, char *argc[])$/;"	f
+main	ex8.c	/^int main(int argc, char *argv[])$/;"	f
+main	ex9.c	/^int main(int argc, char *argv[])$/;"	f
+maxBuffSz	devpkg/bstrlib.c	/^	int maxBuffSz;$/;"	m	struct:bStream	file:
+max_data	ex17.c	/^	int max_data;$/;"	m	struct:Database	file:
+max_rows	ex17.c	/^	int max_rows;$/;"	m	struct:Database	file:
+mlen	devpkg/bstrlib.h	/^	int mlen;$/;"	m	struct:tagbstring
+mlen	devpkg/bstrlib.h	/^    int qty, mlen;$/;"	m	struct:bstrList
+move	object.h	/^	void *(*move)(void *self, Direction direction);$/;"	m	struct:__anon3
+name	ex16-1.c	/^	char *name;$/;"	m	struct:__anon4	file:
+name	ex16.c	/^	char *name;$/;"	m	struct:__anon1	file:
+name	ex17.c	/^	char *name;$/;"	m	struct:Address	file:
+north	ex19.h	/^	struct Room *north;$/;"	m	struct:Room	typeref:struct:Room::Room
+parm	devpkg/bstrlib.c	/^	void * parm;		\/* The stream handle for core stream *\/$/;"	m	struct:bStream	file:
+pass_by_reference	ex22_main.c	/^void pass_by_reference(int *i)$/;"	f
+pass_by_value	ex22_main.c	/^void pass_by_value(int i)$/;"	f
+print_arguments	ex14.c	/^void print_arguments(int argc, char *argv[])$/;"	f
+print_letters	ex14.c	/^void print_letters(char arg[])$/;"	f
+print_numbers	ex18.c	/^void print_numbers(int *numbers, int count) {$/;"	f
+print_size	ex22.c	/^void print_size()$/;"	f
+proc	devpkg/shell.h	/^	apr_proc_t proc;$/;"	m	struct:Shell
+process_input	ex19.c	/^int process_input(Map *game)$/;"	f
+proto	ex19.h	/^	Object proto;$/;"	m	struct:Map
+proto	ex19.h	/^	Object proto;$/;"	m	struct:Monster
+proto	ex19.h	/^	Object proto;$/;"	m	struct:Room
+qty	devpkg/bstrlib.h	/^    int qty, mlen;$/;"	m	struct:bstrList
+readFnPtr	devpkg/bstrlib.c	/^	bNread readFnPtr;	\/* fread compatible fnptr for core stream *\/$/;"	m	struct:bStream	file:
+read_int	ex25.c	/^int read_int(int *out_int)$/;"	f
+read_scan	ex25.c	/^int read_scan(const char *fmt, ...)$/;"	f
+read_string	ex25.c	/^int read_string(char **out_string, int max_buffer)$/;"	f
+reverse_order	ex18.c	/^int reverse_order(int a, int b)$/;"	f
+rows	ex17.c	/^	struct Address *rows;$/;"	m	struct:Database	typeref:struct:Database::Address	file:
+scope_demo	ex22_main.c	/^void scope_demo(int count)$/;"	f
+sentinel	dbg.h	20;"	d
+sentinel	devpkg/dbg.h	20;"	d
+set	ex17.c	/^	int set;$/;"	m	struct:Address	file:
+setInCharField	devpkg/bstrlib.c	1281;"	d	file:
+setInCharField	devpkg/bstrlib.c	1291;"	d	file:
+set_age	ex22.c	/^void set_age(int age)$/;"	f
+slen	devpkg/bstrlib.h	/^	int slen;$/;"	m	struct:tagbstring
+snapUpSize	devpkg/bstrlib.c	/^static int snapUpSize (int i) {$/;"	f	file:
+sorted_order	ex18.c	/^int sorted_order(int a, int b)$/;"	f
+south	ex19.h	/^	struct Room *south;$/;"	m	struct:Room	typeref:struct:Room::Room
+start	ex19.h	/^	Room *start;$/;"	m	struct:Map
+strange_order	ex18.c	/^int strange_order(int a, int b)$/;"	f
+tagbstring	devpkg/bstrlib.h	/^struct tagbstring {$/;"	s
+testInCharField	devpkg/bstrlib.c	1280;"	d	file:
+testInCharField	devpkg/bstrlib.c	1290;"	d	file:
+test_check	ex20.c	/^int test_check(char *file_name)$/;"	f
+test_check_debug	ex20.c	/^int test_check_debug()$/;"	f
+test_check_mem	ex20.c	/^int test_check_mem()$/;"	f
+test_debug	ex20.c	/^void test_debug()$/;"	f
+test_log_err	ex20.c	/^void test_log_err()$/;"	f
+test_log_info	ex20.c	/^void test_log_info()$/;"	f
+test_log_warn	ex20.c	/^void test_log_warn()$/;"	f
+test_sentinel	ex20.c	/^int test_sentinel(int code)$/;"	f
+test_sorting	ex18.c	/^void test_sorting(int *numbers, int count, compare_cb cmp)$/;"	f
+upcase	devpkg/bstrlib.c	559;"	d	file:
+update_ratio	ex22.c	/^double update_ratio(double new_ratio)$/;"	f
+weight	ex16.c	/^	int weight;$/;"	m	struct:__anon1	file:
+west	ex19.h	/^	struct Room *west;$/;"	m	struct:Room	typeref:struct:Room::Room
+wspace	devpkg/bstrlib.c	561;"	d	file:
